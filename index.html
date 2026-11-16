@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="uk" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vektor — промислова автоматизація</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700&family=Onest:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #3DD6C6;
+    }
+    body {
+      font-family: Onest, sans-serif;
+      background: #0E1A24;
+    }
+    h1, h2, h3, .navbar-brand {
+      font-family: "Exo 2", sans-serif;
+    }
+    .navbar-brand span {
+      color: var(--accent);
+    }
+    .hero {
+      min-height: 90vh;
+    }
+    .btn-accent {
+      background: var(--accent);
+      color: #0E1A24;
+      font-weight: 500;
+    }
+    .btn-accent:hover {
+      background: #66E3D6;
+      color: #0E1A24;
+    }
+    .stats {
+  background: #132531;
+}
+.stat-number {
+  font-family: "Exo 2", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.service-card {
+  border-top: 3px solid var(--accent);
+  transition: transform 0.2s;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+}
+.process {
+  background: #132531;
+}
+.step-number {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #0E1A24;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+html {
+  scroll-padding-top: 5rem;
+}
+.project-img {
+  height: 12rem;
+  background: linear-gradient(135deg, #1B3A4B, #3DD6C6);
+}
+.project-img.alt1 {
+  background: linear-gradient(135deg, #1B2A4B, #7C8CF8);
+}
+.project-img.alt2 {
+  background: linear-gradient(135deg, #3A2A1B, #F8B84C);
+}
+.project-result {
+  color: var(--accent);
+  font-weight: 500;
+}
+.faq {
+  max-width: 48rem;
+}
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Vekt<span>or</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#poslugy">Послуги</a></li>
+          <li class="nav-item"><a class="nav-link" href="#protses">Процес</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proiekty">Проєкти</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pytannia">Питання</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakty">Контакти</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="display-3 fw-bold">Автоматизуємо виробництво, яке працює без зупинок</h1>
+          <p class="lead my-4">Проєктуємо робототехнічні лінії, маніпулятори та системи керування для заводів і майстерень.</p>
+          <a class="btn btn-accent btn-lg me-2" href="#kontakty">Отримати розрахунок</a>
+          <a class="btn btn-outline-light btn-lg" href="#proiekty">Наші проєкти</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="stats py-5">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-number">120+</div>
+          <div class="text-body-secondary">реалізованих проєктів</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-number">15</div>
+          <div class="text-body-secondary">років досвіду</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-number">40+</div>
+          <div class="text-body-secondary">підприємств-партнерів</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-number">24/7</div>
+          <div class="text-body-secondary">технічна підтримка</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="poslugy" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Що ми робимо</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card h-100">
+            <div class="card-body">
+              <h3 class="h5 card-title">Роботизовані лінії</h3>
+              <p class="card-text text-body-secondary">Проєктуємо й запускаємо лінії з маніпуляторами для складання, пакування та палетування.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card h-100">
+            <div class="card-body">
+              <h3 class="h5 card-title">Системи керування</h3>
+              <p class="card-text text-body-secondary">Програмуємо ПЛК, будуємо диспетчеризацію та панелі оператора для всього цеху.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card h-100">
+            <div class="card-body">
+              <h3 class="h5 card-title">Модернізація обладнання</h3>
+              <p class="card-text text-body-secondary">Додаємо автоматику до наявних станків і ліній без довгих зупинок виробництва.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <section id="protses" class="process py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Як ми працюємо</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="step-number">1</div>
+          <h3 class="h5">Аудит</h3>
+          <p class="text-body-secondary">Виїжджаємо на виробництво, вимірюємо та знаходимо, що можна автоматизувати.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="step-number">2</div>
+          <h3 class="h5">Проєкт</h3>
+          <p class="text-body-secondary">Готуємо креслення, 3D-модель і розрахунок вартості з термінами окупності.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="step-number">3</div>
+          <h3 class="h5">Монтаж і запуск</h3>
+          <p class="text-body-secondary">Встановлюємо обладнання та налаштовуємо його без тривалих зупинок цеху.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="step-number">4</div>
+          <h3 class="h5">Навчання й підтримка</h3>
+          <p class="text-body-secondary">Навчаємо персонал і залишаємося на зв'язку після запуску.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <section id="proiekty" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Наші проєкти</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 overflow-hidden">
+            <div class="project-img"></div>
+            <div class="card-body">
+              <span class="badge text-bg-secondary mb-2">Харчова промисловість</span>
+              <h3 class="h5 card-title">Лінія палетування</h3>
+              <p class="card-text text-body-secondary">Робот-маніпулятор з системою технічного зору для укладання упаковок на палети.</p>
+              <p class="project-result mb-0">Продуктивність +40%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 overflow-hidden">
+            <div class="project-img alt1"></div>
+            <div class="card-body">
+              <span class="badge text-bg-secondary mb-2">Машинобудування</span>
+              <h3 class="h5 card-title">Автоматизація складання</h3>
+              <p class="card-text text-body-secondary">Складальний цех із контролем якості на кожному етапі та аналітикою в реальному часі.</p>
+              <p class="project-result mb-0">Брак зменшено вдвічі</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 overflow-hidden">
+            <div class="project-img alt2"></div>
+            <div class="card-body">
+              <span class="badge text-bg-secondary mb-2">Металообробка</span>
+              <h3 class="h5 card-title">Модернізація станків</h3>
+              <p class="card-text text-body-secondary">Додали автоматичне завантаження заготовок і моніторинг стану обладнання.</p>
+              <p class="project-result mb-0">Простої скорочено на 30%</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <section id="pytannia" class="process py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Часті питання</h2>
+      <div class="accordion faq mx-auto" id="faq">
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+              Скільки триває проєкт автоматизації?
+            </button>
+          </h3>
+          <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+            <div class="accordion-body">Від чотирьох тижнів для невеликої ділянки до шести місяців для повної лінії. Точні терміни називаємо після аудиту.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+              Чи треба зупиняти виробництво під час монтажу?
+            </button>
+          </h3>
+          <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">Ми плануємо роботи на вихідні та позмінні перерви, тому зупинки зазвичай не перевищують кількох годин.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+              Скільки це коштує?
+            </button>
+          </h3>
+          <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">Вартість залежить від обсягу робіт. Після безкоштовного аудиту ви отримуєте розрахунок із термінами окупності.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
+              Чи працюєте ви з наявним обладнанням?
+            </button>
+          </h3>
+          <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">Так. Ми вбудовуємо автоматику в станки та лінії, які вже працюють, без повної заміни.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <section id="kontakty" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Зв'яжіться з нами</h2>
+      <div class="row g-5">
+
+        <div class="col-lg-5">
+          <h3 class="h5">Контакти</h3>
+          <p class="text-body-secondary">вул. Вигадана, 15, Львів<br>
+          +38 (000) 000-00-00<br>
+          info@vektor.example</p>
+          <h3 class="h5 mt-4">Години роботи</h3>
+          <p class="text-body-secondary">Пн-Пт 9:00-18:00<br>Підтримка клієнтів цілодобово</p>
+        </div>
+
+        <div class="col-lg-7">
+          <form id="form">
+            <div class="mb-3">
+              <label class="form-label" for="name">Ім'я</label>
+              <input class="form-control" type="text" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="phone">Телефон</label>
+              <input class="form-control" type="tel" id="phone" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="topic">Що вас цікавить</label>
+              <select class="form-select" id="topic">
+                <option>Роботизовані лінії</option>
+                <option>Системи керування</option>
+                <option>Модернізація обладнання</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="msg">Повідомлення</label>
+              <textarea class="form-control" id="msg" rows="4"></textarea>
+            </div>
+            <button class="btn btn-accent btn-lg" type="submit">Надіслати</button>
+            <div id="ok" class="alert alert-success d-none mt-3">Дякуємо! Ми зв'яжемося з вами протягом робочого дня.</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-top py-4">
+    <div class="container d-flex justify-content-between flex-wrap gap-2 text-body-secondary">
+      <span>Vektor, Львів</span>
+      <span>Демо-проєкт (concept)</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("ok").classList.remove("d-none");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
